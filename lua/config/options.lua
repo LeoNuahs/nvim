@@ -20,6 +20,9 @@ if vim.fn.has('wsl') == 1 then
     }
 end
 
+-- For work
+vim.opt.fileformat = "unix"
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
