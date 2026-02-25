@@ -11,7 +11,10 @@ return {
                 checkstyle = {
                     -- Pass the path to your checkstyle.xml here
                     args = {
-                        "-f", "sarif", "-c", vim.fn.expand("~/.config/nvim/formats/java/onb-checkstyle.xml")
+                        "-f",
+                        "sarif",
+                        "-c",
+                        vim.fn.expand("~/.config/nvim/formats/java/onb-checkstyle.xml"),
                     },
                 },
             },

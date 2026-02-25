@@ -17,22 +17,22 @@ vim.keymap.set("n", "J", "mzJ`z")
 -- Navigation without cursor movement
 vim.keymap.set("n", "<C-d>", "<C-d>zz") -- Page up
 vim.keymap.set("n", "<C-u>", "<C-u>zz") -- Page down
-vim.keymap.set("n", "n", "nzzzv")       -- Search next
-vim.keymap.set("n", "N", "Nzzzv")       -- Search previous
+vim.keymap.set("n", "n", "nzzzv") -- Search next
+vim.keymap.set("n", "N", "Nzzzv") -- Search previous
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 -- Best remaps ever
-vim.keymap.set("x", "<leader>p", "\"_dP") -- Better paste
+vim.keymap.set("x", "<leader>p", '"_dP') -- Better paste
 
-vim.keymap.set("n", "<leader>y", "\"+y")  -- Better yank/copy
-vim.keymap.set("v", "<leader>y", "\"+y")  -- Better yank/copy
-vim.keymap.set("n", "<leader>Y", "\"+Y")  -- Better yank/copy
+vim.keymap.set("n", "<leader>y", '"+y') -- Better yank/copy
+vim.keymap.set("v", "<leader>y", '"+y') -- Better yank/copy
+vim.keymap.set("n", "<leader>Y", '"+Y') -- Better yank/copy
 
-vim.keymap.set("n", "<leader>d", "\"_d")  -- Better delete
-vim.keymap.set("v", "<leader>d", "\"_d")  -- Better delete
+vim.keymap.set("n", "<leader>d", '"_d') -- Better delete
+vim.keymap.set("v", "<leader>d", '"_d') -- Better delete
 
 -- Comment remaps to Ctrl+c
 vim.keymap.set("n", "<C-_>", "gcc", { remap = true })

@@ -5,16 +5,16 @@ vim.g.snacks_animate = false
 vim.g.autoformat = false
 
 -- For WSL
-if vim.fn.has('wsl') == 1 then
+if vim.fn.has("wsl") == 1 then
     vim.g.clipboard = {
-        name = 'WslClipboard',
+        name = "WslClipboard",
         copy = {
-            ['+'] = 'clip.exe',
-            ['*'] = 'clip.exe',
+            ["+"] = "clip.exe",
+            ["*"] = "clip.exe",
         },
         paste = {
-            ['+'] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
-            ['*'] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+            ["+"] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+            ["*"] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
         },
         cache_enabled = 0,
     }
@@ -34,6 +34,7 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 vim.opt.wrap = false
+vim.g.autoformat = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
