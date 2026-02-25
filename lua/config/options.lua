@@ -34,7 +34,7 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 vim.opt.wrap = false
-vim.g.autoformat = true
+-- vim.g.autoformat = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
