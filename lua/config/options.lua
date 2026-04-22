@@ -2,7 +2,6 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 vim.g.snacks_animate = false
-vim.g.autoformat = false
 
 -- For WSL
 if vim.fn.has("wsl") == 1 then
@@ -31,10 +30,11 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
-vim.opt.smartindent = true
+-- Set to false because of TreeSitter
+vim.opt.smartindent = false
 
 vim.opt.wrap = false
--- vim.g.autoformat = true
+vim.g.autoformat = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
