@@ -34,9 +34,13 @@ vim.keymap.set("n", "<leader>Y", '"+Y') -- Better yank/copy
 vim.keymap.set("n", "<leader>d", '"_d') -- Better delete
 vim.keymap.set("v", "<leader>d", '"_d') -- Better delete
 
--- Comment remaps to Ctrl+c
+-- Comment remaps to Ctrl+/
+-- Modern terminals
 vim.keymap.set("n", "<C-_>", "gcc", { remap = true })
 vim.keymap.set("v", "<C-_>", "gc", { remap = true })
+-- Legacy/Traditional terminals
+vim.keymap.set("n", "<C-/>", "gcc", { remap = true })
+vim.keymap.set("v", "<C-/>", "gc", { remap = true })
 
 -- Replace all of current word
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
