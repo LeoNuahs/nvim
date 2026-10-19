@@ -20,7 +20,6 @@ if vim.fn.has("wsl") == 1 then
 end
 vim.opt.clipboard = "unnamedplus"
 
--- For work
 vim.opt.fileformat = "unix"
 
 vim.opt.nu = true
